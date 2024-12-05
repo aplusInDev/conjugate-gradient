@@ -26,7 +26,7 @@ def conjugate_gradient(
     A: List[List[Union[int, float]]],
     b: List[Union[int, float]], 
     x0: Optional[List[Union[int, float]]] = None, 
-    e: float = 1e-10
+    ϵ: float = 1e-10
 ) -> Tuple[List[Union[int, float]], int, List[Union[int, float]]]:
     """
     Solve the system of linear equations Ax = b using the conjugate gradient method.
@@ -86,7 +86,7 @@ def conjugate_gradient(
 
     x_values = [x0.copy()]
     ## iterate until the residual is small enough
-    while np.linalg.norm(r0) > e:
+    while np.linalg.norm(r0) > ϵ:
         αk = np.dot(r0, r0) / np.dot(d0, np.dot(A, d0))
         x0 = x0 + αk * d0
         rk = r0 - αk * np.dot(A, d0)
