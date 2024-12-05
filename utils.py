@@ -90,9 +90,6 @@ def conjugate_gradient(
         αk = np.dot(r0, r0) / np.dot(d0, np.dot(A, d0))
         x0 = x0 + αk * d0
         rk = r0 - αk * np.dot(A, d0)
-        # if np.linalg.norm(rk) < e:
-        ## break if the residual is small enough
-        #     break
         βk = np.dot(rk, rk) / np.dot(r0, r0)
         d0 = rk + βk * d0
         r0 = rk
