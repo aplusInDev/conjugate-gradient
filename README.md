@@ -6,6 +6,12 @@ This repository contains the implementation of the Conjugate Gradient method, a 
 
 - [**AplusInDev**](https://www.github.com/AplusInDev)
 
+## Prerequisites
+
+- Python 3.6 or higher
+- pip
+- git
+
 ## Installation
 
 ### Windows
@@ -83,9 +89,9 @@ A = np.array([[4, 1], [1, 3]])
 b = np.array([1, 2])
 
 # Solve the system of linear equations
-x = conjugate_gradient(A, b)
+x0, k, x_values = conjugate_gradient(A, b)
 
-print(x)
+print(f"Solution: {x0}, Iterations: {k}, x_values: {x_values}")
 ```
 
 ## Example
