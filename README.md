@@ -107,6 +107,11 @@ x0, k, x_values = conjugate_gradient(A, b)
 print(f"Solution: {x0}, Iterations: {k}, x_values: {x_values}")
 ```
 
+**Output:**
+```
+Solution: [0.21052632 0.57894737], Iterations: 2, x_values: [array([0.5, 0.5]), array([0.21052632, 0.57894737])]
+```
+
 ## Example
 
 **try:**
