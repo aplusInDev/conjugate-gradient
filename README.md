@@ -1,4 +1,17 @@
-# Conjugate Gradient
+# Conjugate Gradient Method
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Authors](#authors)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+    1. [Windows](#windows-installation)
+    2. [Linux/MacOS](#linuxmacos-installation)
+5. [Usage](#usage)
+6. [Example](#example)
+
+## Overview
 
 This repository contains the implementation of the Conjugate Gradient method, a popular algorithm for solving systems of linear equations with a symmetric positive-definite matrix.
 
@@ -14,7 +27,7 @@ This repository contains the implementation of the Conjugate Gradient method, a 
 
 ## Installation
 
-### Windows
+### Windows Installation
 
 1. Clone the repository
 
@@ -46,7 +59,7 @@ This repository contains the implementation of the Conjugate Gradient method, a 
     pip install -r requirements.txt
     ```
 
-### Linux/MacOS
+### Linux/MacOS Installation
 
 1. Clone the repository
 
